@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>activiti-modeler</groupId>
+	<artifactId>activiti-modeler</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+	</build>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<activiti.version>5.12.1</activiti.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-modeler</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-explorer</artifactId>
+			<version>${activiti.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupid>com.vaadin</groupid>
+					<artifactid>vaadin</artifactid>
+				</exclusion>
+				<exclusion>
+					<groupid>org.vaadin.addons</groupid>
+					<artifactid>dcharts-widget</artifactid>
+				</exclusion>
+				<exclusion>
+					<artifactid>activiti-simple-workflow</artifactid>
+					<groupid>org.activiti</groupid>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+
+	<repositories>
+		<repository>
+			<id>buzzmedia</id>
+			<url>http://maven.thebuzzmedia.com</url> <!-- ImageScalr -->
+		</repository>
+		<repository>
+			<id>activiti</id>
+			<name>Activiti</name>
+			<url>https://maven.alfresco.com/nexus/content/repositories/activiti/</url>
+		</repository>
+		<repository>
+			<id>Alfresco thirdparty</id>
+			<url>https://maven.alfresco.com/nexus/content/repositories/thirdparty/</url>
+		</repository>
+		<repository>
+			<id>activiti-third-party</id>
+			<name>Activiti third party</name>
+			<url>https://maven.alfresco.com/nexus/content/repositories/activiti-thirdparty/</url>
+		</repository>
+		<repository>
+			<id>maven-restlet</id>
+			<name>Public online Restlet repository</name>
+			<url>http://maven.restlet.org</url>
+		</repository>
+	</repositories>
+</project>
