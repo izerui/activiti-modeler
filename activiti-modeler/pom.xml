@@ -18,6 +18,12 @@
 			<artifactId>activiti-modeler</artifactId>
 			<version>${activiti.version}</version>
 		</dependency>
+		<!-- 查看流程详细定义 -->
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-diagram-rest</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-explorer</artifactId>
