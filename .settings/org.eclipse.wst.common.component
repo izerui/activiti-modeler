@@ -2,9 +2,9 @@
 <project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="activiti-modeler">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/assembly"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/java"/>
         <property name="context-root" value="activiti-modeler"/>
         <property name="java-output-path" value="/activiti-modeler/build/classes"/>
     </wb-module>
