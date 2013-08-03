@@ -1,7 +1,7 @@
 activiti-modeler
 ================
 
-actviti-modeler 5.13 , no explorer ,  service geter for bpm
+actviti-modeler 5.12.1 , no explorer ,  service geter for bpm
 
 
-5.12.1 and 5.13 no changed. without ProcessDiagramCanvas.js . and the js yet in this prj!
+ProcessDiagramCanvas.js is used , and the version is 5.13
