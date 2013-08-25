@@ -5,7 +5,17 @@
 	<artifactId>activiti-modeler</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warSourceDirectory>
+						WebContent</warSourceDirectory>
+				</configuration>
+			</plugin>
+
+		</plugins>
 	</build>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -48,27 +58,9 @@
 
 	<repositories>
 		<repository>
-			<id>buzzmedia</id>
-			<url>http://maven.thebuzzmedia.com</url> <!-- ImageScalr -->
-		</repository>
-		<repository>
 			<id>activiti</id>
 			<name>Activiti</name>
 			<url>https://maven.alfresco.com/nexus/content/repositories/activiti/</url>
-		</repository>
-		<repository>
-			<id>Alfresco thirdparty</id>
-			<url>https://maven.alfresco.com/nexus/content/repositories/thirdparty/</url>
-		</repository>
-		<repository>
-			<id>activiti-third-party</id>
-			<name>Activiti third party</name>
-			<url>https://maven.alfresco.com/nexus/content/repositories/activiti-thirdparty/</url>
-		</repository>
-		<repository>
-			<id>maven-restlet</id>
-			<name>Public online Restlet repository</name>
-			<url>http://maven.restlet.org</url>
 		</repository>
 	</repositories>
 </project>
