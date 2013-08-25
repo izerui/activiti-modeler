@@ -48,16 +48,16 @@
 			<version>${activiti.version}</version>
 			<exclusions>
 				<exclusion>
-					<groupId>com.vaadin</groupId>
-					<artifactId>vaadin</artifactId>
+					<groupid>com.vaadin</groupid>
+					<artifactid>vaadin</artifactid>
 				</exclusion>
 				<exclusion>
-					<groupId>org.vaadin.addons</groupId>
-					<artifactId>dcharts-widget</artifactId>
+					<groupid>org.vaadin.addons</groupid>
+					<artifactid>dcharts-widget</artifactid>
 				</exclusion>
 				<exclusion>
-					<artifactId>activiti-simple-workflow</artifactId>
-					<groupId>org.activiti</groupId>
+					<artifactid>activiti-simple-workflow</artifactid>
+					<groupid>org.activiti</groupid>
 				</exclusion>
 			</exclusions>
 		</dependency>
