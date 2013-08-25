@@ -10,10 +10,19 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
-					<warSourceDirectory>WebContent</warSourceDirectory>
+					<warSourceDirectory>
+						WebContent</warSourceDirectory>
 				</configuration>
 			</plugin>
-
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+				<version>6.1.26</version>
+				<configuration>
+					<webAppSourceDirectory>WebContent</webAppSourceDirectory>
+					<scanIntervalSeconds>0</scanIntervalSeconds>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<properties>
@@ -39,16 +48,16 @@
 			<version>${activiti.version}</version>
 			<exclusions>
 				<exclusion>
-					<groupId>com.vaadin</groupId>
-					<artifactId>vaadin</artifactId>
+					<groupid>com.vaadin</groupid>
+					<artifactid>vaadin</artifactid>
 				</exclusion>
 				<exclusion>
-					<groupId>org.vaadin.addons</groupId>
-					<artifactId>dcharts-widget</artifactId>
+					<groupid>org.vaadin.addons</groupid>
+					<artifactid>dcharts-widget</artifactid>
 				</exclusion>
 				<exclusion>
-					<artifactId>activiti-simple-workflow</artifactId>
-					<groupId>org.activiti</groupId>
+					<artifactid>activiti-simple-workflow</artifactid>
+					<groupid>org.activiti</groupid>
 				</exclusion>
 			</exclusions>
 		</dependency>
